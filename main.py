@@ -6,13 +6,13 @@ from datetime import datetime, timedelta
 from apscheduler.schedulers.background import BackgroundScheduler
 import random
 import string
-TOKEN = "6418845303:AAFNx_TT6oRMUv8lLhMpeqAmTO_L1516ymY"
+TOKEN = "8413470357:AAF9kCNNP1MsUzxBBiVyu2tXR7GQ_Pg5nKs"
 FIREBASE_URL = "https://asthmar-8b9a6-default-rtdb.firebaseio.com"
 DATABASE_SECRET = "FqqoLMBh6gbbXhmvvcC1KQ0rJOIkbPUwnfaoESOj"
 CH_USER = "@my00002"
 ADMIN_USER = "@altaee_z"
-BOT_NAME = "علي بوت"
-POINT_NAME = "بوينت"
+BOT_NAME = "البوت الالكتروني المحترف "
+POINT_NAME = "نقطة"
 ADMIN_ID = 6454550864
 bot = telebot.TeleBot(TOKEN)
 def fb_get(path):
