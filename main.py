@@ -379,10 +379,10 @@ def start(message):
                 except: pass
 
     try:
-        status = bot.get_chat_member(CH_USER, uid).status
+        status = bot.get_chat_member(CH_USER1, uid).status
         if status in ['left', 'kicked']:
             btn = types.InlineKeyboardMarkup().add(types.InlineKeyboardButton("اشترك هنا", url=f"t.me/{CH_USER1[1:]}"))
-            return bot.send_message(uid, f"❌ يجب الاشتراك في {CH_USER} أولاً!", reply_markup=btn)
+            return bot.send_message(uid, f"❌ يجب الاشتراك في {CH_USER1} أولاً!", reply_markup=btn)
     except: pass
 
     user = fb_get(f"users/{uid}")
