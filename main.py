@@ -10,6 +10,7 @@ TOKEN = "8413470357:AAF9kCNNP1MsUzxBBiVyu2tXR7GQ_Pg5nKs"
 FIREBASE_URL = "https://asthmar-8b9a6-default-rtdb.firebaseio.com"
 DATABASE_SECRET = "FqqoLMBh6gbbXhmvvcC1KQ0rJOIkbPUwnfaoESOj"
 CH_USER = "@my00002"
+CH_USER1 = "@xx28z"
 ADMIN_USER = "@altaee_z"
 BOT_NAME = "علي بوت"
 POINT_NAME = "بوينت"
@@ -380,7 +381,7 @@ def start(message):
     try:
         status = bot.get_chat_member(CH_USER, uid).status
         if status in ['left', 'kicked']:
-            btn = types.InlineKeyboardMarkup().add(types.InlineKeyboardButton("اشترك هنا", url=f"t.me/{CH_USER[1:]}"))
+            btn = types.InlineKeyboardMarkup().add(types.InlineKeyboardButton("اشترك هنا", url=f"t.me/{CH_USER1[1:]}"))
             return bot.send_message(uid, f"❌ يجب الاشتراك في {CH_USER} أولاً!", reply_markup=btn)
     except: pass
 
